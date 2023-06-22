@@ -1,0 +1,244 @@
+﻿<html>
+  <head>
+    <title>CatBit - Мгновенный обмен криптовалюты</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+  </head>
+  <body>
+
+    <div class="toolbar">
+      <a href="" class="header_logo"><img src="image/logo.svg" width="124" height="80" class="logo_img"></a>
+      <div class="head_menu">
+        <ul>
+          <li style="width: 111px; margin-right: 30px;">
+            <a href="https://catbit.io/#/rules">Правила обмена</a>
+          </li>
+  
+          <li style="width: 164px; margin-right: 30px;">
+            <a href="https://catbit.io/#/partners">Партнерская программа</a>
+          </li>
+  
+          <li style="width: 55px; margin-right: 30px;">
+            <a href="https://catbit.io/#/reviews">Отзывы</a>
+          </li>
+  
+          <li style="width: 32px; margin-right: 30px;">
+            <a href="https://catbit.io/blog/">Блог</a>
+          </li>
+        </ul>
+      </div>
+      <span>
+        <button id="signin">Вход для клиентов</button>
+        <button id="signup">Регистрация</button>
+      </span>
+    </div>
+
+    <div class="toolbar_bottom">
+      <ul>
+        <li>
+          <a href="https://t.me/catbitio"><img src="">Telegram</a>
+        </li>
+
+        <li>
+          <a href="mailto:catbit@jabber.calyxinstitute.org"><img src="">Mail</a>
+        </li>
+
+        <li>
+          <a href="https://vk.com/catbitio"><img src="">https://vk.com/catbitio</a>
+        </li>
+
+        <li>
+          <a href=""><img src="">Время работы:<br>08:00 – 02:00 МСК</a>
+        </li>
+      </ul>
+    </div>
+
+    <form id="form_signin">
+      <div id="myModal1" class="modal1">
+        <div class="modal-content1">
+          <div class="modal-header1">
+            <span class="close1">&times;</span>
+            <p>Вход для клиентов</p>
+          </div>
+          <div class="modal-body1">
+            <p>Логин:</p>
+            <input type="text" id="login1" required="required"><br>
+            <p>Пароль:</p>
+            <input type="password" id="password1" required="required"><br><br>
+            <button onclick="signin()" class="signin_form_button">Войти</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form id="form_signup">
+      <div id="myModal2" class="modal2">
+        <div class="modal-content2">
+          <div class="modal-header2">
+            <span class="close2">&times;</span>
+            <p>Регистрация</p>
+          </div>
+          <div class="modal-body2">
+            <p>Логин:</p>
+            <input type="text" id="login2" required="required"><br>
+            <p>Email:</p>
+            <input type="email" id="email" required="required"><br>
+            <p>Пароль:</p>
+            <input type="password" id="password2" required="required"><br>
+            <p>Повторить пароль:</p>
+            <input type="password" id="password22" required="required"><br>
+            <button onclick="signup()" class="signup_form_button">Зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    
+    <div class="change_form">
+
+      <div class="change1">
+        <div class="change_title1">
+          <span>Вы отдаете</span>
+        </div>
+
+        <div class="change_body1">
+          <button><img src="image/emblema-tinkoff-bank_1613735185161.png">Тинькофф Банк</button>
+          <button><img src="image/qiwi_1550266984106.png">QIWI</button>
+          <button><img src="image/Bitcoin.svg_1550267364888.png">Bitcoin</button>
+          <button><img src="image/monero_logo_1550267550647.png">Monero</button>  
+          <button><img src="image/dash_1547861419305_1550268062800.png">Dash</button>
+          <button><img src="image/ETHEREUM-YOUTUBE-PROFILE-PIC_1550268386840.png">Ethereum</button>
+          <button><img src="image/tether-usdt-logo_1613734576486.png">Tether USD ERC20</button>
+          <button><img src="image/tether-usdt-logo_1613734576486.png">Tether USD TRC20</button>
+          <button><img src="image/ripple_1595578831446.jpg">Ripple</button>
+          <button><img src="image/litecoin-ltc-logo_1613735587641.png">Litecoin</button>
+          <button><img src="image/tron-trx-logo_1613735464488.png">Tron</button>
+          <button><img src="image/zcash_1595542200333.png">Zcash</button>
+          <button><img src="image/doge_logo2-1024x1024_1613737028310.png">Dogecoin</button>
+          <button><img src="image/usd-coin-usdc-logo_1613546448010.png">USD Coin</button>
+          <button><img src="image/polkadot-new-dot-logo_1613555128519.png">Polkadot</button>
+          <button><img src="image/Bitcoin-Cash-BCH-icon_1613556757997.png">Bitcoin Cash</button>
+          <button><img src="image/chainlink-link-logo_1613558270938.png">ChainLink</button>
+          <button><img src="image/uniswap-uni-logo_1613558952774.png">Uniswap</button>
+          <button><img src="image/maker-mkr-logo_1613562453081.png">Maker</button>
+          <button><img src="image/trueusd-logo_1624097619571.png">TrueUSD</button>
+          <button><img src="image/0x-zrx-logo_1624102191169.png">0x</button>
+          <button><img src="image/icon-icx-logo_1624102695660.png">ICON</button>
+          <button><img src="image/bittorrent-btt-logo_1624103112653.png">BitTorrent</button>
+        </div>
+      </div>
+
+      <div class="change2">
+        <div class="change_title2">
+          <span>Вы получаете</span>
+        </div>
+
+        <div class="change_body2">
+          <button><img src="image/6606560_1550264940724.png">Сбербанк</button>
+          <button><img src="image/emblema-tinkoff-bank_1613735185161.png">Тинькофф Банк</button>
+          <button><img src="image/vtb24_mobilebanking_android_1550265569220.png">ВТБ24</button>
+          <button><img src="image/ui-520cb1df63bf37.60069075_1550266857696.png">Промсвязьбанк</button>
+          <button><img src="image/qiwi_1550266984106.png">QIWI</button>
+          <button><img src="image/Bitcoin.svg_1550267364888.png">Bitcoin</button>
+          <button><img src="image/dash_1547861419305_1550268062800.png">Dash</button>
+          <button><img src="image/ETHEREUM-YOUTUBE-PROFILE-PIC_1550268386840.png">Ethereum</button>
+          <button><img src="image/6166997_1558526081132.png">Открытие</button>
+          <button><img src="image/aval-logo1_1558526264423.jpg">Райффайзен банк</button>
+          <button><img src="image/xlogo_big.jpg.pagespeed.ic.A5Esyddezz_1558526342697.jpg">Русский Стандарт</button>
+          <button><img src="image/tether-usdt-logo_1613734576486.png">Tether USD ERC20</button>
+          <button><img src="image/tether-usdt-logo_1613734576486.png">Tether USD TRC20</button>
+          <button><img src="image/ripple_1595578831446.jpg">Ripple</button>
+          <button><img src="image/litecoin-ltc-logo_1613735587641.png">Litecoin</button>
+          <button><img src="image/tron-trx-logo_1613735464488.png">Tron</button>
+          <button><img src="image/zcash_1595542200333.png">Zcash</button>
+          <button><img src="image/stellar-coin-crypto-top-10_1613736915982.png">Stellar</button>
+          <button><img src="image/eos_1603524467652.jpg">EOS</button>
+          <button><img src="image/doge_logo2-1024x1024_1613737028310.png">Dogecoin</button>
+          <button><img src="image/usd-coin-usdc-logo_1613546448010.png">USD Coin</button>
+          <button><img src="image/polkadot-new-dot-logo_1613555128519.png">Polkadot</button>
+          <button><img src="image/Bitcoin-Cash-BCH-icon_1613556757997.png">Bitcoin Cash</button>
+          <button><img src="image/chainlink-link-logo_1613558270938.png">ChainLink</button>
+          <button><img src="image/uniswap-uni-logo_1613558952774.png">Uniswap</button>
+          <button><img src="image/maker-mkr-logo_1613562453081.png">Maker</button>
+          <button><img src="image/trueusd-logo_1624097619571.png">TrueUSD</button>
+          <button><img src="image/0x-zrx-logo_1624102191169.png">0x</button>
+          <button><img src="image/icon-icx-logo_1624102695660.png">ICON</button>
+          <button><img src="image/bittorrent-btt-logo_1624103112653.png">BitTorrent</button>
+          <button><img src="image/авангард_1631015976929.jpg">Авангард</button>
+          <button><img src="image/logo-vector-graphics-gazprombank-image-png-favpng-zBHea3JyMER4RBHbgVQ8XshBX_1631015523319.jpg">Газпромбанк</button>
+          <button><img src="image/почтабанк_1631016580192.png">Почта Банк</button>
+          <button><img src="image/Россельхозбанк_1631016727769.jpeg">Россельхозбанк</button>
+          <button><img src="image/social_logo_1631018028520.png">РосБанк</button>
+          <button><img src="image/мтсбанк_1631018141912.png">МТС Банк</button>
+          <button><img src="image/unnamed_1631018614322.jpg">Карта МИР</button>
+        </div>
+      </div>
+
+      <div class="change3">
+        <div class="change_title3">
+          <span><b>ОБМЕН BITCOIN НА СБЕРБАНК</b></span>
+          <span>1 BTC = 4625523.34615 RUB</span>
+        </div>
+
+        <div class="change_body3">
+          <form>
+            <div class="change_form3">
+              <span class="text2_form3"><span></span><b>Отдаю Bitcoin</b></span>
+              <span class="text1_form3">Вы отдаете</span>
+              <span class="text_form3">До 4.11 BTC</span>
+              <span><input type="number" value="0"></span>
+              <span class="text2_form3"><span></span><b>Получаю Сбербанк</b></span>
+              <span class="text1_form3">Вы получаете</span>
+              <span class="text_form3">От 20000 до 1501753.76 RUB</span>
+              <span><input type="number" value="0"></span>
+              <span class="text_form3">Номер карты:</span>
+              <span><input type="text" placeholder="Введите номер карты"></span>
+              <span class="text_form3">Почта (не обязательно)</span>
+              <span><input type="text" placeholder="Введите номер карты"></span>
+              <button class="change_button">Обменять</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="dialog_window">
+      <div class="dialog_window_head">
+        <img src="image/5f560954a8f30.jpg" style="position: absolute; width: 40px; height: 40px; border-radius: 50%; left: 10px; top: 10px;">
+        <p style="color: white; margin: 10px 0px 3px 65px;">
+          Максим
+        </p>
+        <p style="font-size: 13px; color: rgb(172, 172, 172); margin: 0px 0px 0px 65px;">
+          Консультант
+        </p>
+      </div>
+      <div class="dialog_window_body">
+        <p style="position: absolute; color: rgb(156, 156, 156); margin: 20px 0px 0px 65px; font-size: 15px;">
+          Максим
+        </p>
+        <img src="image/5f560954a8f30.jpg" style="position: absolute; width: 40px; height: 40px; border-radius: 50%; left: 10px; top: 55px;">
+        <div class="message" style="position: absolute; background: rgb(214, 214, 214); width: 228px; height: 50px; top: 10%; left: 20%; border-radius: 10px; padding: 15px 0px 0px 15px;">
+          <p style=" margin: 0px 0px 0px 0px;">
+            Здравствуйте! Я могу вам <br> чем-то помочь?
+          </p>
+          <p style="position: absolute; color: rgb(109, 109, 109); font-size: 11px; bottom: 10%; right: 5%; margin: 0px;">
+            14:30
+          </p>
+        </div>
+        <div class="enter_windwow" style="position: absolute; bottom: 10%; height: 40px; width: 340px;">
+          <input type="text" placeholder="  Введите сообщение" style="height: 40px; width: 340px; border: 1px solid silver; border-bottom: 0px; font-size: 15px;">
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>
+        © CatBit.ru Мультивалютный обменный сервис. Меняем с 2007 года. В этот же<br> 
+        год некий Сатоши Накамото сообщил, что начал работать над концепцией новой<br> 
+        денежной системы, названной автором как Биткоин Техподдержка ежедневно без<br> 
+        выходных с 06 до 21 по мск времени. support@netex24.net
+      </p>
+    </footer>
+  </body>
+</html>
